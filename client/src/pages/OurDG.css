@@ -1,0 +1,133 @@
+/* Hero Section */
+.our-dg-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.dg-hero {
+  position: relative;
+  height: 300px;
+  background: url('/pafda1.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.dg-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.5));
+}
+
+.dg-hero h1 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* DG Cards */
+.dg-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dg-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.dg-image-container {
+  width: 200px;
+  height: 200px;
+  margin: 30px auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #f0e6ff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dg-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dg-info {
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dg-info h3 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+.dg-title {
+  color: #6c757d;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dg-period {
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.dg-honors {
+  color: #6f42c1;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.dg-description {
+  color: #495057;
+  line-height: 1.6;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .dg-card {
+    margin-bottom: 30px;
+  }
+  
+  .dg-image-container {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dg-hero {
+    height: 250px;
+  }
+  
+  .dg-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .dg-image-container {
+    width: 160px;
+    height: 160px;
+  }
+}
